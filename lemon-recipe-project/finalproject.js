@@ -40,7 +40,7 @@ function getPrices(taxBoolean) {
 // Implement getDiscount()
 function getDiscount(taxBoolean,guests) {
     getPrices(taxBoolean);
-    if ((typeof (guests) == 'number') && (guests < 30 && guests > 0)) {
+    if ((typeof (guests) === 'number') && (guests < 30 && guests > 0)) {
         var discount = 0;
         if (guests < 5) {
             discount = 5;
